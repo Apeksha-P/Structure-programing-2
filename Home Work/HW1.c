@@ -12,36 +12,12 @@ int main(){
     char rev[x];
     int value;
     for(i=0;i<x;i++){
-        rev[i] = arr[x-i+1];
-        /*if(arr[i]==arr[x-i+1]){
-            r=1;
-        }
-        else{
-            r=0;
-        }*/
+        rev[i] = arr[x-i-1];
     }
-    
-    /*for(i=0;i<x;i++){
-        if(arr[i]==rev[i]){
-            r += 1;
-        }
-        else{
-            printf("no");
-            break;
-        }
-    }*/
     value = strcmp(arr, rev);  
     if(value == 0)  
-        printf("strings are same");  
+        printf("strings are Palindrome");  
     else  
-        printf("strings are not same");
-    /*if(rev==arr){
-        printf("yes");
-    }
-    else{
-        printf("no");
-    }*/
-    /*printf("%s",rev);
-    printf("%s",arr);*/
+        printf("strings are not Palindrome");
     return 0;
 }

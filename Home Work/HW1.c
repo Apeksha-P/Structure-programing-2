@@ -4,9 +4,8 @@
 int main(){
     char arr[20];
 
-    int x,i;
+    int x,i,count=0,j;
     int r=0;
-    printf("Enter Character values :\n");
     scanf("%s",&arr);
     x=strlen(arr);
     char rev[x];
@@ -16,8 +15,16 @@ int main(){
     }
     value = strcmp(arr, rev);  
     if(value == 0)  
-        printf("strings are Palindrome");  
-    else  
-        printf("strings are not Palindrome");
+        printf("0");  
+    else  {
+        for (i = 0, j = x - 1; i < j; i++, j--) {
+            if (arr[i] != arr[j]) {
+                count++;
+                j++;
+            }
+        }
+        printf("%d\n",count);
+    }
+        
     return 0;
 }

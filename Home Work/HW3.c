@@ -7,6 +7,7 @@ int main(){
     //input value 
     scanf("%d %d %d %d",&A,&B,&S,&N);
 
+    //Find number of banknotes worth A need
     x=(S-B*N)/(A-B);
 
     //Output

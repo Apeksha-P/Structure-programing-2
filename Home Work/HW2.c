@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include <string.h>
 #include <stdlib.h>
+//Create function
 int concat(int x,int y){
     char str1[20],str2[20],str3[20];
 

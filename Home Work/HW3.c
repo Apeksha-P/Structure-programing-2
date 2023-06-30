@@ -8,12 +8,15 @@ int main(){
     scanf("%d %d %d %d",&A,&B,&S,&N);
 
     //Find number of banknotes worth A need
-    x=(S-B*N)/(A-B);
+    if(A!=B){
+        x=(S-B*N)/(A-B);
 
-    //Output
-    if(x<0)
-        printf("-1");
-    else
-        printf("%d",x);
+        //Output
+        if(x<0)
+            printf("-1");
+        else
+            printf("%d",x);
+    }
+    
     return 0;
 }

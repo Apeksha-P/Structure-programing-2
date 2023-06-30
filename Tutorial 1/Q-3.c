@@ -6,9 +6,7 @@ int main() {
     int a,b,c;
 
     printf("Enter three numbers: \n");
-    scanf("%d",&a);
-    scanf("%d",&b);
-    scanf("%d",&c);
+    scanf("%d",&a,&b,&c);
     if(a>b){
         if(a>c){
             printf("Max = %d",a);

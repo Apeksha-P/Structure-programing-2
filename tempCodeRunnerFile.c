@@ -1,20 +1,16 @@
 #include<stdio.h>
+#include<string.h>
 int main(){
-    int a,b;
-    char c;
-    printf("Enter number 1:\n");
-    scanf("%d",&a);
-    printf("Enter operater:\n");
-    scanf("%c",&c);
-    printf("Enter number 2:\n");
-    scanf("%d",&b);
-    switch (c){
-        case '+':
-            printf("\n%d %c %d = %d",a,c,b,a+b);
-            break;
-        case '-':
-            printf("\n%d %c %d = %d",a,c,b,a-b);
-            break;
+    char str[50];
+    scanf("%[^\n]",str);
+    int count=1;
+    int x = strlen(str);
+    for(int i =0;i<x;i++){
+        if(str[i]==' '){
+            count=count+1;
+        }
     }
+    printf("%d",count);
+    /*while(str[i]!=' ')*/
     return 0;
 }

@@ -7,10 +7,10 @@ int main(){
     int x = strlen(str);
     for(int i =0;i<x;i++){
         if(str[i]==' '){
-            count=count+1;
+            if((str[i+1]!=' ')&&(str[i+1]!='\0'))
+                count=count+1;
         }
     }
     printf("%d",count);
-    /*while(str[i]!=' ')*/
     return 0;
 }

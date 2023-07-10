@@ -1,16 +1,20 @@
 #include<stdio.h>
-#include<string.h>
 int main(){
-    char str[50];
-    scanf("%[^\n]",str);
-    int count=1;
-    int x = strlen(str);
-    for(int i =0;i<x;i++){
-        if(str[i]==' '){
-            count=count+1;
-        }
+    int select;
+    float usd ,lkr,amount ; 
+    printf("Please select the convertion type : \n");
+    scanf("%d",&select);
+    if(select == 1){
+        printf("Enter the amount (USD):\n");
+        scanf("%f",&usd);
+        amount = usd * 307.73;
+        printf("%.2f USD is %.2fLKR",usd,amount);
     }
-    printf("%d",count);
-    /*while(str[i]!=' ')*/
+    else if(select==2){
+        printf("Enter the amount (LKR):\n");
+        scanf("%f",&lkr);
+        amount = lkr/307.73;
+        printf("%.2f LKR is %.2fLKR",lkr,amount);
+    }
     return 0;
 }

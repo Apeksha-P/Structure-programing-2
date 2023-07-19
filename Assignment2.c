@@ -5,9 +5,12 @@ int main() {
     int flag = 1;
 
     while(flag==1){
+
+        //Get file name ready to rename
         printf("\n\nWhat is the file name do you want to rename?: \n");
         scanf("%s", oldFileName);
 
+        //Rename file
         printf("\nNew name for the file: \n");
         scanf("%s", newFileName);
 
